@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* CSS Document*/
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body, html{
+    color: #D310AF;
+    background-color: rgb(245, 206, 213);
+}
+nav{
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1%;
+    background-color: #FEC1E4;
+    padding-top: 3px;
+    padding-bottom: 14px; 
+}
+nav a{
+    display: inline-block;
+    color: #D310AF;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 0 60px;
+    margin-top: 15px;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover{
+    border-color: #d310af;
+    color: #d310af;
+    padding: 5px;
+}
+/* Classe que fixa a linha na página atual */
+nav a.ativo {
+    border-bottom: 4px solid #d310af; 
+    border-bottom-width: 4px;
+    border-width: 1%;
+}
+p{
+    width: 55%;
+    height: 50%;
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-weight: 450;
+    font-size: 31px;
+    margin-top: 1.5%;
+    color: black;
+}
+.chamada {
+    width: 35%;
+    height: 55%;
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-size: 31px;
+    margin-top: 2%;
+    color: black;
+}
+/* Estilização dos Botões */
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 16px; /* Espaço entre os dois botões */
+}
+.btn-whatsapp-custom {
+    display: inline-flex; /* Ajusta a caixinha exatamente ao tamanho do conteúdo */
+    align-items: center;
+    gap: 12px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    font-size: 21px; /* Tamanho proporcional à imagem */
+    font-family: 'Inter', serif;
+    font-weight: 500; /* Fonte mais limpa e idêntica à imagem */
+    padding: 10px 24px;
+    border: 1.5px solid #000000; /* Borda preta fina */
+    border-radius: 14px; /* Arredondamento suave das pontas */
+    box-shadow: 0px 4px 0px #000000; /* Sombra sólida inferior */
+    cursor: pointer;
+}
+
+/* O círculo verde do ícone */
+.icone-wa-container {
+    background-color: #32C753; /* Verde vivo do WhatsApp */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000; /* Contorno preto sutil no ícone */
+}
+
+/* O símbolo do telefone branco de dentro */
+.icone-wa-container i {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.btn-email-custom {
+    display: inline-flex; /* Ajusta a largura exata ao redor do texto */
+    align-items: center;
+    gap: 12px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    font-size: 21px; /* Mesma fonte e tamanho do WhatsApp */
+    font-family: 'Inter', serif;
+    font-weight: 500;
+    padding: 10px 24px;
+    border: 1.5px solid #000000; /* Borda idêntica */
+    border-radius: 14px;
+    box-shadow: 0px 4px 0px #000000; /* Sombra idêntica */
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+/* O quadrado preto do ícone de e-mail */
+.icone-email-container {
+    background-color: #000000; /* Fundo preto conforme a imagem */
+    width: 40px;
+    height: 40px;
+    border-radius: 6px; /* Cantos levemente arredondados para o quadrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+}
+/* O envelope branco dentro do quadrado */
+.icone-email-container i {
+    color: #FFFFFF; /* Ícone branco */
+    font-size: 25px;
+}

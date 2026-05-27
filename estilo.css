@@ -1,0 +1,145 @@
+@charset "utf-8";
+@import url('https://googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* CSS Document*/
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body, html{
+    color: #D310AF;
+    background-color: rgb(245, 206, 213);
+}
+nav{
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1%;
+    background-color: #FEC1E4;
+    padding-top: 3px;
+    padding-bottom: 14px;
+}
+nav a{
+    display: inline-block;
+    color: #D310AF;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 60px;
+    margin-top: 15px;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover{
+    border-color: #d310af;
+    color: #d310af;
+    padding: 5px;
+}
+/* Classe que fixa a linha na página atual */
+nav a.ativo {
+    border-bottom: 4px solid #d310af; 
+    border-bottom-width: 4px;
+    border-width: 1%;
+}
+h1{
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 1%;
+    color: black;
+}
+p{
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 22px;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+.portfolio {
+  width: 100%;
+  max-width: 1100px; /* Controla a largura máxima do portfólio na tela */
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Estrutura das linhas */
+.linha-tres, .linha-duas {
+  display: flex;
+  justify-content: space-between; /* Alinha os itens perfeitamente nas extremidades */
+  width: 100%;
+  margin-top: 1%;
+}
+.linha-tres {
+  margin-bottom: 50px; /* Espaço vertical entre as duas fileiras */
+}
+.linha-tres .item-portfolio {
+  width: 20%; /* Três itens na linha */
+}
+.linha-duas .item-portfolio {
+  width: 25%; /* Dois itens mais largos, alinhados com os cantos de cima */
+  justify-content: space-between;
+}
+/* Estilização das imagens */
+.item-portfolio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Estilo das legendas */
+.item-portfolio p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-top: 9px;
+  color: #000000;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+/* Container do texto de chamada */
+.chamada-projetos h2 {
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  text-decoration: underline;
+  font-size: 35px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+/* Container para garantir a centralização do botão */
+.container-botao {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 35px; /* Distância generosa entre as imagens e o botão */
+}
+/* Estilização do Botão Rosa */
+.botao-portfolio {
+  display: inline-block;
+  background-color: #F59191; /* Tom de rosa vivo idêntico ao layout */
+  color: #000000; /* Texto branco */
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 15px 40px; /* Espaçamento interno (altura x largura) */
+  border-radius: 6px; /* Cantos levemente arredondados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve no botão */
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Transição suave de efeitos */
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.botao-portfolio:hover {
+  background-color: #d443b0d8; /* Escurece o rosa de leve ao passar o mouse */
+  transform: translateY(-2px); /* Efeito sutil de levantar o botão ao interagir */
+}
